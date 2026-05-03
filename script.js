@@ -3,7 +3,7 @@ const translations = {
         together: "Together with their families",
         names: "Mounika & Sai Kishore",
         bride_details: "Daughter of Smt. Ramanamma & Sri Nallamari Rama Mohan",
-        groom_details: "Eldest Son of Smt. Padma Priya & Sri Sankarapu Sreenivasulu",
+        groom_details: "Son of Smt. Padma Priya & Sri Sankarapu Sreenivasulu",
         invite_text: "Invite you to celebrate their wedding",
         wedding_date: "17 • June • 2026",
         wedding_time_exact: "Time: 4:15 AM - 5:15 AM",
