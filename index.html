@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mounika & Sai Kishore | Wedding Invitation</title>
+    <link rel="stylesheet" href="styles.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap"
+        rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Splash Screen Sequence -->
+    <div id="splash-screen" class="splash-screen">
+        <div class="envelope-wrapper" id="envelope">
+            <div class="envelope-back"></div>
+            <div class="letter">
+                <h2 class="splash-names" data-i18n="names">Mounika & Sai Kishore</h2>
+                <p class="splash-text">Wedding Invitation</p>
+            </div>
+            <div class="envelope-front"></div>
+            <div class="envelope-top"></div>
+            <div class="wax-seal" id="open-invite-btn">
+                <i class="fas fa-heart"></i>
+                <p style="font-size: 0.6rem; margin-top: 5px; text-transform: uppercase;">Tap</p>
+            </div>
+        </div>
+        <!-- Sunburst transition -->
+        <div class="sunburst" id="sunburst"></div>
+    </div>
+
+    <!-- Language Selector -->
+    <div class="lang-selector">
+        <select id="lang-select">
+            <option value="en">English</option>
+            <option value="te">తెలుగు (Telugu)</option>
+            <option value="hi">हिन्दी (Hindi)</option>
+            <option value="kn">ಕನ್ನಡ (Kannada)</option>
+            <option value="ta">தமிழ் (Tamil)</option>
+        </select>
+    </div>
+
+    <!-- Floating Audio Toggle -->
+    <button id="audio-btn" class="audio-toggle">
+        <i class="fas fa-music"></i>
+    </button>
+    <audio id="bg-music" loop>
+        <source src="music.mp3" type="audio/mpeg">
+    </audio>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="particles" id="particles"></div>
+        <div class="hero-content fade-in-up">
+            <p class="subtitle" data-i18n="together">Together with their families</p>
+            <h1 class="couple-names gold-foil" data-i18n="names">Mounika & Sai Kishore</h1>
+            <div class="family-details">
+                <p data-i18n="bride_details">Kumarthe (Daughter) of Smt. Ramanamma & Sri Nallamari Ramayya</p>
+                <p data-i18n="groom_details">Kumarudu (Son) of Smt. Padmavathi & Sri Surya Prakasha Rao</p>
+            </div>
+            <p class="invite-text" data-i18n="invite_text">Invite you to celebrate their wedding</p>
+            <div class="date-location">
+                <p><strong data-i18n="wedding_date">17 • June • 2026</strong></p>
+                <p data-i18n="wedding_time_exact">Time: 4:15 AM - 5:15 AM</p>
+                <p data-i18n="wedding_location">Sri Chowdeshwari Kalyana Mandapam, Madanapalle</p>
+            </div>
+            <div class="countdown" id="countdown">
+                <div class="time-box"><span id="days">00</span>
+                    <p data-i18n="days">Days</p>
+                </div>
+                <div class="time-box"><span id="hours">00</span>
+                    <p data-i18n="hours">Hrs</p>
+                </div>
+                <div class="time-box"><span id="minutes">00</span>
+                    <p data-i18n="minutes">Min</p>
+                </div>
+                <div class="time-box"><span id="seconds">00</span>
+                    <p data-i18n="seconds">Sec</p>
+                </div>
+            </div>
+            <a href="#events" class="scroll-down"><i class="fas fa-chevron-down"></i></a>
+        </div>
+    </section>
+
+    <!-- Our Story Section -->
+    <section class="story hidden" id="story">
+        <h2 class="section-title" data-i18n="our_story">Our Story</h2>
+        <div class="gallery">
+            <div class="polaroid polaroid-left">
+                <div class="photo placeholder-1"></div>
+                <p class="caption" data-i18n="story_1">The first time we met...</p>
+            </div>
+            <div class="polaroid polaroid-right">
+                <div class="photo placeholder-2"></div>
+                <p class="caption" data-i18n="story_2">She said yes!</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scratch-to-Reveal Section -->
+    <section class="scratch-section hidden" id="scratch">
+        <h2 class="section-title">✨ Scratch to Reveal ✨</h2>
+        <p class="scratch-hint">Scratch the card below to reveal the wedding date!</p>
+        <div class="scratch-card-wrapper">
+            <div class="scratch-reveal-content">
+                <p class="reveal-label">Save the Date</p>
+                <h2 class="reveal-date" data-i18n="wedding_date">17 • June • 2026</h2>
+                <p class="reveal-time" data-i18n="wedding_time_exact">Time: 4:15 AM - 5:15 AM</p>
+                <p class="reveal-venue" data-i18n="wedding_location">Sri Chowdeshwari Wedding Venue, Madanapalle</p>
+            </div>
+            <canvas id="scratch-canvas" width="340" height="220"></canvas>
+        </div>
+    </section>
+
+    <!-- Events Section -->
+    <section class="events hidden" id="events">
+        <h2 class="section-title" data-i18n="events_title">Wedding Events</h2>
+        <div class="tall-cards-container">
+            <!-- Reception -->
+            <div class="event-group">
+                <div class="tall-card" style="background-image: url('reception_art.png');">
+                    <div class="card-particles" data-effect="flowers"></div>
+                    <div class="card-particles" data-effect="sparkles"></div>
+                    <div class="card-particles" data-effect="fireflies"></div>
+                    <div class="card-overlay">
+                        <h3 data-i18n="reception">Reception</h3>
+                        <p class="date" data-i18n="reception_date">June 16, 2026 | 7:00 PM</p>
+                        <p class="location" data-i18n="reception_loc">Sri Chowdeshwari Kalyana Mandapam, Madanapalle</p>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <a href="https://maps.app.goo.gl/cemyDsAPyQEnwAxx7" target="_blank" class="btn-primary"
+                        data-i18n="get_directions">Get Directions</a>
+                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Reception+-+Mounika+%26+Sai+Kishore&dates=20260616T133000Z/20260616T183000Z&location=Sri+Chowdeshwari+Kalyana+Mandapam,+Madanapalle"
+                        target="_blank" class="btn-secondary"><i class="far fa-calendar-plus"></i> <span
+                            data-i18n="add_calendar">Add to Calendar</span></a>
+                </div>
+            </div>
+
+            <!-- Wedding -->
+            <div class="event-group">
+                <div class="tall-card" style="background-image: url('wedding_art.png');">
+                    <div class="card-particles" data-effect="flowers"></div>
+                    <div class="card-particles" data-effect="sparkles"></div>
+                    <div class="card-particles" data-effect="fireflies"></div>
+                    <div class="card-overlay">
+                        <h3 data-i18n="wedding">The Wedding</h3>
+                        <p class="date" data-i18n="wedding_time">Nov 15, 2026 | 5:00 PM</p>
+                        <p class="location" data-i18n="wedding_location">The Grand Taj, Mumbai</p>
+                    </div>
+                </div>
+                <div class="card-actions">
+                    <a href="https://maps.app.goo.gl/cemyDsAPyQEnwAxx7" target="_blank" class="btn-primary"
+                        data-i18n="get_directions">Get Directions</a>
+                    <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+-+Mounika+%26+Sai+Kishore&dates=20260616T224500Z/20260616T234500Z&location=Sri+Chowdeshwari+Kalyana+Mandapam,+Madanapalle"
+                        target="_blank" class="btn-secondary"><i class="far fa-calendar-plus"></i> <span
+                            data-i18n="add_calendar">Add to Calendar</span></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family Invites Slider Section -->
+    <section class="family-invites hidden" id="invites">
+        <h2 class="section-title" data-i18n="warm_wishes">Warm Wishes</h2>
+        <div class="slider-container">
+            <div class="slide fade">
+                <p class="invite-msg" data-i18n="invite_parents">"We cordially invite you to grace the auspicious
+                    occasion of our daughter's wedding and bless the couple."</p>
+                <p class="invite-author" data-i18n="author_parents">- Smt. Ramanamma & Sri Nallamari Rama Mohan
+                    (Parents)</p>
+            </div>
+            <div class="slide fade">
+                <p class="invite-msg" data-i18n="invite_anna">"Please join us in celebrating my little sister's
+                    wedding!"</p>
+                <p class="invite-author" data-i18n="author_anna">- Venu Gopal (Anna)</p>
+            </div>
+            <div class="slide fade">
+                <p class="invite-msg" data-i18n="invite_thammudu">"Looking forward to your presence at my elder sister's
+                    wedding celebration!"</p>
+                <p class="invite-author" data-i18n="author_thammudu">- Krishna Vamsi (Thammudu)</p>
+            </div>
+
+            <!-- Navigation -->
+            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
+            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+        </div>
+        <div class="dots" style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+    </section>
+
+    <footer>
+        <p data-i18n="footer">Made with ❤️ for Mounika & Sai Kishore</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
