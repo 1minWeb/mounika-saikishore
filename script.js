@@ -237,18 +237,31 @@ document.addEventListener('DOMContentLoaded', () => {
     const audioBtn = document.getElementById('audio-btn');
     const bgMusic = document.getElementById('bg-music');
     let isPlaying = false;
+    let autoPauseTimer = null;
 
     bgMusic.volume = 0.4;
+
+    function startAutoPause() {
+        clearTimeout(autoPauseTimer);
+        autoPauseTimer = setTimeout(() => {
+            bgMusic.pause();
+            audioBtn.classList.remove('playing');
+            audioBtn.innerHTML = '<i class="fas fa-music"></i>';
+            isPlaying = false;
+        }, 60000);
+    }
 
     audioBtn.addEventListener('click', () => {
         if (isPlaying) {
             bgMusic.pause();
             audioBtn.classList.remove('playing');
             audioBtn.innerHTML = '<i class="fas fa-music"></i>';
+            clearTimeout(autoPauseTimer);
         } else {
             bgMusic.play().catch(error => console.log("Audio play failed:", error));
             audioBtn.classList.add('playing');
             audioBtn.innerHTML = '<i class="fas fa-pause"></i>';
+            startAutoPause();
         }
         isPlaying = !isPlaying;
     });
@@ -280,6 +293,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     audioBtn.classList.add('playing');
                     audioBtn.innerHTML = '<i class="fas fa-pause"></i>';
                     isPlaying = true;
+                    startAutoPause();
                 }
             }, 2600); // 0.6s envelope + 2s sunburst
         });
