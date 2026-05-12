@@ -30,7 +30,11 @@ const translations = {
         invite_anna: "Please join us in celebrating my little sister's wedding!",
         author_anna: "- Venu Gopal (Elder Brother)",
         invite_thammudu: "Looking forward to your presence at my sister's wedding celebration!",
-        author_thammudu: "- Krishna Vamsi (Younger Brother)"
+        author_thammudu: "- Krishna Vamsi (Younger Brother)",
+        invite_groom_parents: "We cordially invite you to grace the auspicious occasion of our son's wedding and bless the couple.",
+        author_groom_parents: "- Smt. Padma Priya & Sri Sankarapu Sreenivasulu (Parents)",
+        invite_groom_sister: "Please join us in celebrating my brother's wedding!",
+        author_groom_sister: "- Nikitha (Sister)"
     },
     te: {
         together: "వారి కుటుంబ సభ్యులతో కలిసి",
@@ -63,7 +67,11 @@ const translations = {
         invite_anna: "మా చెల్లి పెళ్లికి తప్పక రావాలి!",
         author_anna: "- వేణు గోపాల్ (అన్న)",
         invite_thammudu: "మా అక్క పెళ్లి సందడికి మీరే ప్రత్యేకం!",
-        author_thammudu: "- కృష్ణ వంశీ (తమ్ముడు)"
+        author_thammudu: "- కృష్ణ వంశీ (తమ్ముడు)",
+        invite_groom_parents: "మా కుమారుడి వివాహ మహోత్సవానికి విచ్చేసి వధూవరులను ఆశీర్వదించవలసిందిగా ప్రార్థిస్తున్నాము.",
+        author_groom_parents: "- శ్రీమతి పద్మప్రియ మరియు శ్రీ సంకరాపు శ్రీనివాసులు (తల్లిదండ్రులు)",
+        invite_groom_sister: "మా అన్న పెళ్లికి తప్పక రావాలి!",
+        author_groom_sister: "- నికిత (చెల్లి)"
     },
     hi: {
         together: "अपने परिवारों के साथ",
@@ -96,7 +104,11 @@ const translations = {
         invite_anna: "मेरी छोटी बहन की शादी में जरूर आएं!",
         author_anna: "- वेणु गोपाल (बड़ा भाई)",
         invite_thammudu: "मेरी बड़ी बहन की शादी के जश्न में आपकी उपस्थिति का इंतजार है!",
-        author_thammudu: "- कृष्ण वामसी (छोटा भाई)"
+        author_thammudu: "- कृष्ण वामसी (छोटा भाई)",
+        invite_groom_parents: "हम आपको हमारे बेटे की शादी के शुभ अवसर पर आमंत्रित करते हैं, कृपया आकर नवविवाहित जोड़े को आशीर्वाद दें।",
+        author_groom_parents: "- श्रीमती पद्मप्रिया और श्री संकरापु श्रीनिवासुलु (माता-पिता)",
+        invite_groom_sister: "मेरे भाई की शादी में जरूर आएं!",
+        author_groom_sister: "- निकिता (बहन)"
     },
     kn: {
         together: "ತಮ್ಮ ಕುಟುಂಬದವರೊಂದಿಗೆ",
@@ -129,7 +141,11 @@ const translations = {
         invite_anna: "ನನ್ನ ತಂಗಿಯ ಮದುವೆಗೆ ತಪ್ಪದೇ ಬನ್ನಿ!",
         author_anna: "- ವೇಣು ಗೋಪಾಲ್ (ಅಣ್ಣ)",
         invite_thammudu: "ನನ್ನ ಅಕ್ಕನ ಮದುವೆಯ ಸಂಭ್ರಮದಲ್ಲಿ ನಿಮ್ಮ ಉಪಸ್ಥಿತಿಯನ್ನು ನಿರೀಕ್ಷಿಸುತ್ತಿದ್ದೇವೆ!",
-        author_thammudu: "- ಕೃಷ್ಣ ವಂಶಿ (ತಮ್ಮ)"
+        author_thammudu: "- ಕೃಷ್ಣ ವಂಶಿ (ತಮ್ಮ)",
+        invite_groom_parents: "ನಮ್ಮ ಮಗನ ವಿವಾಹ ಮಹೋತ್ಸವಕ್ಕೆ ಆಗಮಿಸಿ ವಧು-ವರರನ್ನು ಆಶೀರ್ವದಿಸಬೇಕಾಗಿ ವಿನಂತಿಸುತ್ತೇವೆ.",
+        author_groom_parents: "- ಶ್ರೀಮತಿ ಪದ್ಮಪ್ರಿಯಾ ಮತ್ತು ಶ್ರೀ ಸಂಕರಾಪು ಶ್ರೀನಿವಾಸುಲು (ಪೋಷಕರು)",
+        invite_groom_sister: "ನನ್ನ ಅಣ್ಣನ ಮದುವೆಗೆ ತಪ್ಪದೇ ಬನ್ನಿ!",
+        author_groom_sister: "- ನಿಕಿತಾ (ತಂಗಿ)"
     },
     ta: {
         together: "தங்கள் குடும்பத்தினருடன் இணைந்து",
@@ -162,7 +178,11 @@ const translations = {
         invite_anna: "என் தங்கையின் திருமணத்திற்கு கட்டாயம் வரவும்!",
         author_anna: "- வேணு கோபால் (அண்ணா)",
         invite_thammudu: "என் அக்காவின் திருமண கொண்டாட்டத்தில் உங்கள் வருகையை எதிர்நோக்குகிறோம்!",
-        author_thammudu: "- கிருஷ்ண வம்சி (தம்பி)"
+        author_thammudu: "- கிருஷ்ண வம்சி (தம்பி)",
+        invite_groom_parents: "எங்கள் மகனின் திருமண விழாவிற்கு வருகை தந்து மணமக்களை வாழ்த்த அன்புடன் அழைக்கிறோம்.",
+        author_groom_parents: "- திருமதி பத்மப்ரியா மற்றும் திரு சங்கராபு சீனிவாசுலு (பெற்றோர்)",
+        invite_groom_sister: "என் அண்ணனின் திருமணத்திற்கு கட்டாயம் வரவும்!",
+        author_groom_sister: "- நிகிதா (தங்கை)"
     }
 }
 
@@ -266,27 +286,71 @@ document.addEventListener('DOMContentLoaded', () => {
         isPlaying = !isPlaying;
     });
 
+    // --- Pause music when tab/app is not visible ---
+    // wasPlayingBeforeHide tracks whether we paused due to hide (not user action)
+    let wasPlayingBeforeHide = false;
 
+    const handleHide = () => {
+        if (isPlaying) {
+            wasPlayingBeforeHide = true;
+            bgMusic.pause();
+            clearTimeout(autoPauseTimer);
+        }
+    };
 
-    // --- Splash Screen Logic ---
-    const splashScreen = document.getElementById('splash-screen');
-    const openBtn = document.getElementById('open-invite-btn');
-    const envelope = document.getElementById('envelope');
-    const sunburst = document.getElementById('sunburst');
+    const handleShow = () => {
+        if (wasPlayingBeforeHide) {
+            wasPlayingBeforeHide = false;
+            bgMusic.play().catch(() => {});
+            startAutoPause();
+        }
+    };
 
-    if (openBtn && envelope && sunburst) {
-        openBtn.addEventListener('click', () => {
-            // 1. Shrink and fade the envelope
-            envelope.classList.add('is-open');
+    // Primary: Page Visibility API (works on desktop + most mobile)
+    document.addEventListener('visibilitychange', () => {
+        document.hidden ? handleHide() : handleShow();
+    });
 
-            // 2. After envelope vanishes, trigger the sunburst
+    // Fallback: pagehide fires on iOS Safari when switching apps
+    window.addEventListener('pagehide', handleHide);
+    window.addEventListener('pageshow', handleShow);
+
+    // Fallback: freeze/resume lifecycle events (Chrome on Android)
+    document.addEventListener('freeze', handleHide);
+    document.addEventListener('resume', handleShow);
+
+    // --- Get Directions: stop music when opening maps ---
+    document.querySelectorAll('.btn-directions, a[href*="maps"]').forEach(link => {
+        link.addEventListener('click', () => {
+            if (isPlaying) {
+                bgMusic.pause();
+                audioBtn.classList.remove('playing');
+                audioBtn.innerHTML = '<i class="fas fa-music"></i>';
+                isPlaying = false;
+                clearTimeout(autoPauseTimer);
+            }
+        });
+    });
+
+    // --- Curtain Tap Invitation Logic ---
+    const btnOpen = document.getElementById('btn-open');
+    let curtainOpened = false;
+
+    if (btnOpen) {
+        btnOpen.addEventListener('click', () => {
+            if (curtainOpened) return;
+            curtainOpened = true;
+
+            // 1. Fade out the CTA content
+            const cCta = document.getElementById('c-cta');
+            cCta.style.opacity = '0';
+            cCta.style.transform = 'scale(0.95)';
+
+            // 2. Open the curtain panels
             setTimeout(() => {
-                sunburst.classList.add('active');
-            }, 600);
+                document.getElementById('cpl').classList.add('open');
+                document.getElementById('cpr').classList.add('open');
 
-            // 3. After sunburst fills the screen, fade out and reveal
-            setTimeout(() => {
-                splashScreen.classList.add('fade-out');
                 // Auto-start music
                 if (!isPlaying) {
                     bgMusic.play().catch(e => console.log("Audio play failed:", e));
@@ -295,142 +359,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     isPlaying = true;
                     startAutoPause();
                 }
-            }, 2600); // 0.6s envelope + 2s sunburst
+            }, 300);
+
+            // 3. Hide curtain after panels have slid away
+            setTimeout(() => {
+                document.getElementById('curtain').classList.add('gone');
+            }, 1900);
         });
-    }
-
-    // --- Scratch-to-Reveal ---
-    const scratchCanvas = document.getElementById('scratch-canvas');
-    if (scratchCanvas) {
-        const ctx = scratchCanvas.getContext('2d');
-        let isScratching = false;
-        let scratchRevealed = false;
-        let canvasReady = false;
-        let scratchCount = 0;
-
-        const initCanvas = () => {
-            if (canvasReady) return;
-            // Use fixed dimensions matching CSS
-            scratchCanvas.width = 340;
-            scratchCanvas.height = 220;
-
-            // Golden metallic gradient cover
-            const grad = ctx.createLinearGradient(0, 0, 340, 220);
-            grad.addColorStop(0, '#b8860b');
-            grad.addColorStop(0.3, '#d4af37');
-            grad.addColorStop(0.5, '#ffd700');
-            grad.addColorStop(0.7, '#d4af37');
-            grad.addColorStop(1, '#b8860b');
-            ctx.fillStyle = grad;
-            ctx.fillRect(0, 0, 340, 220);
-
-            // "Scratch Here" text
-            ctx.fillStyle = 'rgba(0,0,0,0.4)';
-            ctx.font = 'bold 18px Montserrat, sans-serif';
-            ctx.textAlign = 'center';
-            ctx.fillText('✨ Scratch Here ✨', 170, 105);
-            ctx.font = '12px Montserrat, sans-serif';
-            ctx.fillText('Swipe to reveal the date', 170, 125);
-
-            canvasReady = true;
-        };
-
-        // Init immediately + also when section becomes visible
-        initCanvas();
-        const scratchObserver = new IntersectionObserver((entries) => {
-            if (entries[0].isIntersecting) initCanvas();
-        });
-        scratchObserver.observe(scratchCanvas);
-
-        const scratch = (x, y) => {
-            if (!canvasReady || scratchRevealed) return;
-            // Scale mouse coords to canvas coords
-            const rect = scratchCanvas.getBoundingClientRect();
-            const scaleX = 340 / rect.width;
-            const scaleY = 220 / rect.height;
-            const cx = x * scaleX;
-            const cy = y * scaleY;
-
-            ctx.globalCompositeOperation = 'destination-out';
-            ctx.beginPath();
-            ctx.arc(cx, cy, 28, 0, Math.PI * 2);
-            ctx.fill();
-
-            // Check reveal every 5 scratches for performance
-            scratchCount++;
-            if (scratchCount % 5 === 0) checkReveal();
-        };
-
-        const getPos = (e) => {
-            const rect = scratchCanvas.getBoundingClientRect();
-            if (e.touches) {
-                return { x: e.touches[0].clientX - rect.left, y: e.touches[0].clientY - rect.top };
-            }
-            return { x: e.clientX - rect.left, y: e.clientY - rect.top };
-        };
-
-        const checkReveal = () => {
-            if (scratchRevealed) return;
-
-            // Fallback: If they scratched a lot (e.g. 40 strokes), just reveal it
-            // This is useful if the browser blocks getImageData for security reasons
-            if (scratchCount > 40) {
-                doReveal();
-                return;
-            }
-
-            try {
-                const imageData = ctx.getImageData(0, 0, 340, 220);
-                let transparent = 0;
-                // Sample every 4th pixel for speed
-                for (let i = 3; i < imageData.data.length; i += 16) {
-                    if (imageData.data[i] < 128) transparent++; // < 50% opacity
-                }
-                const total = imageData.data.length / 16;
-                if (transparent / total > 0.60) {
-                    doReveal();
-                }
-            } catch (e) {
-                // If getImageData fails (CORS/Tainted Canvas), just wait for the fallback stroke count
-                console.log("Canvas read blocked, relying on stroke count fallback");
-            }
-        };
-
-        const doReveal = () => {
-            scratchRevealed = true;
-            scratchCanvas.style.transition = 'opacity 0.8s ease';
-            scratchCanvas.style.opacity = '0';
-            setTimeout(() => { scratchCanvas.style.display = 'none'; }, 800);
-        };
-
-        // Mouse events
-        scratchCanvas.addEventListener('mousedown', (e) => {
-            isScratching = true;
-            const pos = getPos(e);
-            scratch(pos.x, pos.y);
-        });
-        scratchCanvas.addEventListener('mouseup', () => { isScratching = false; });
-        scratchCanvas.addEventListener('mouseleave', () => { isScratching = false; });
-        scratchCanvas.addEventListener('mousemove', (e) => {
-            if (!isScratching) return;
-            const pos = getPos(e);
-            scratch(pos.x, pos.y);
-        });
-
-        // Touch events
-        scratchCanvas.addEventListener('touchstart', (e) => {
-            isScratching = true;
-            const pos = getPos(e);
-            scratch(pos.x, pos.y);
-            e.preventDefault();
-        }, { passive: false });
-        scratchCanvas.addEventListener('touchend', () => { isScratching = false; });
-        scratchCanvas.addEventListener('touchmove', (e) => {
-            if (!isScratching) return;
-            const pos = getPos(e);
-            scratch(pos.x, pos.y);
-            e.preventDefault();
-        }, { passive: false });
     }
 
     // --- 5. Falling Petals (Mindblowing effect) ---
@@ -471,141 +406,57 @@ document.addEventListener('DOMContentLoaded', () => {
 
     setInterval(createParticle, 400);
 
-    // --- 6. Family Invites Slider ---
-    let slideIndex = 1;
-    let slideInterval;
-
-    const showSlides = (n) => {
-        let i;
-        let slides = document.getElementsByClassName("slide");
-        let dots = document.getElementsByClassName("dot");
-        if (slides.length === 0) return;
-
-        if (n > slides.length) { slideIndex = 1 }
-        if (n < 1) { slideIndex = slides.length }
-
-        for (i = 0; i < slides.length; i++) {
-            slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-            dots[i].className = dots[i].className.replace(" active", "");
-        }
-
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
+    // --- 6. Family Invites Sliders (bride + groom independent) ---
+    const sliders = {
+        bride: { index: 1, timer: null, slideClass: 'slide-bride', dotClass: 'dot-bride' },
+        groom: { index: 1, timer: null, slideClass: 'slide-groom', dotClass: 'dot-groom' }
     };
 
-    const startSlideTimer = () => {
-        clearInterval(slideInterval);
-        slideInterval = setInterval(() => {
-            slideIndex++;
-            showSlides(slideIndex);
-        }, 3000); // 3 seconds
+    const showSlide = (group, n) => {
+        const s = sliders[group];
+        const slides = document.getElementsByClassName(s.slideClass);
+        const dots = document.getElementsByClassName(s.dotClass);
+        if (!slides.length) return;
+
+        if (n > slides.length) s.index = 1;
+        else if (n < 1) s.index = slides.length;
+        else s.index = n;
+
+        for (let i = 0; i < slides.length; i++) slides[i].style.display = 'none';
+        for (let i = 0; i < dots.length; i++) dots[i].classList.remove('active');
+
+        slides[s.index - 1].style.display = 'block';
+        if (dots[s.index - 1]) dots[s.index - 1].classList.add('active');
     };
 
-    window.changeSlide = (n) => {
-        showSlides(slideIndex += n);
-        startSlideTimer(); // Reset timer on manual interaction
+    const startTimer = (group) => {
+        const s = sliders[group];
+        clearInterval(s.timer);
+        s.timer = setInterval(() => showSlide(group, s.index + 1), 3500);
     };
 
-    window.currentSlide = (n) => {
-        showSlides(slideIndex = n);
-        startSlideTimer(); // Reset timer on manual interaction
+    window.changeSlide = (group, n) => {
+        showSlide(group, sliders[group].index + n);
+        startTimer(group);
     };
 
-    // Initialize slider
-    showSlides(slideIndex);
-    startSlideTimer();
+    window.currentSlide = (group, n) => {
+        showSlide(group, n);
+        startTimer(group);
+    };
 
-    // --- 7. 3D Tilt Physics for Tall Cards ---
-    const tallCards = document.querySelectorAll('.tall-card');
-    tallCards.forEach(card => {
-        card.addEventListener('mousemove', (e) => {
-            const rect = card.getBoundingClientRect();
-            const x = e.clientX - rect.left; // mouse x within card
-            const y = e.clientY - rect.top;  // mouse y within card
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            const rotateY = ((x - centerX) / centerX) * 15; // max 15deg
-            const rotateX = ((centerY - y) / centerY) * 10; // max 10deg
-            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
-            card.style.boxShadow = `${-rotateY * 2}px ${rotateX * 2}px 60px rgba(0,0,0,0.5), 0 0 30px rgba(212,175,55,0.2)`;
-        });
+    showSlide('bride', 1); startTimer('bride');
+    showSlide('groom', 1); startTimer('groom');
 
-        card.addEventListener('mouseleave', () => {
-            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
-            card.style.boxShadow = '0 20px 60px rgba(0,0,0,0.6), 0 0 30px rgba(212,175,55,0.15)';
-        });
-
-        // Touch support for mobile
-        card.addEventListener('touchmove', (e) => {
-            const touch = e.touches[0];
-            const rect = card.getBoundingClientRect();
-            const x = touch.clientX - rect.left;
-            const y = touch.clientY - rect.top;
-            const centerX = rect.width / 2;
-            const centerY = rect.height / 2;
-            const rotateY = ((x - centerX) / centerX) * 12;
-            const rotateX = ((centerY - y) / centerY) * 8;
-            card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.02)`;
-        }, { passive: true });
-
-        card.addEventListener('touchend', () => {
-            card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale(1)';
-            card.style.boxShadow = '0 20px 60px rgba(0,0,0,0.6), 0 0 30px rgba(212,175,55,0.15)';
-        });
-    });
-
-    // --- 8. Card Particle Effects (Flowers, Fireflies, Sparkles) ---
-    document.querySelectorAll('.card-particles').forEach(container => {
-        const effect = container.getAttribute('data-effect');
-
-        if (effect === 'flowers') {
-            for (let i = 0; i < 15; i++) {
-                const flower = document.createElement('div');
-                flower.classList.add('card-flower');
-                flower.style.left = Math.random() * 100 + '%';
-                flower.style.animationDuration = (Math.random() * 6 + 6) + 's';
-                flower.style.animationDelay = (Math.random() * 8) + 's';
-                const size = Math.random() * 10 + 8;
-                flower.style.width = size + 'px';
-                flower.style.height = size + 'px';
-                const colors = [
-                    'radial-gradient(ellipse, #ff9fb0 30%, #e76f8a 100%)',
-                    'radial-gradient(ellipse, #ffcc5c 30%, #f7a134 100%)',
-                    'radial-gradient(ellipse, #ffd9e0 30%, #ff8da1 100%)',
-                    'radial-gradient(ellipse, #fff5b0 30%, #f0d060 100%)'
-                ];
-                flower.style.background = colors[Math.floor(Math.random() * colors.length)];
-                container.appendChild(flower);
+    // --- 7. Fade in event card background images on scroll ---
+    const bgObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('bg-loaded');
+                bgObserver.unobserve(entry.target);
             }
-        }
+        });
+    }, { threshold: 0.2 });
 
-        if (effect === 'fireflies') {
-            for (let i = 0; i < 10; i++) {
-                const firefly = document.createElement('div');
-                firefly.classList.add('card-firefly');
-                firefly.style.left = Math.random() * 90 + 5 + '%';
-                firefly.style.top = Math.random() * 70 + 10 + '%';
-                firefly.style.animationDuration = (Math.random() * 5 + 4) + 's';
-                firefly.style.animationDelay = (Math.random() * 6) + 's';
-                const size = Math.random() * 4 + 3;
-                firefly.style.width = size + 'px';
-                firefly.style.height = size + 'px';
-                container.appendChild(firefly);
-            }
-        }
-
-        if (effect === 'sparkles') {
-            for (let i = 0; i < 25; i++) {
-                const sparkle = document.createElement('div');
-                sparkle.classList.add('card-sparkle');
-                sparkle.style.left = Math.random() * 100 + '%';
-                sparkle.style.top = Math.random() * 80 + '%';
-                sparkle.style.animationDuration = (Math.random() * 3 + 2) + 's';
-                sparkle.style.animationDelay = (Math.random() * 5) + 's';
-                container.appendChild(sparkle);
-            }
-        }
-    });
+    document.querySelectorAll('.tl-ev-bg').forEach(bg => bgObserver.observe(bg));
 });

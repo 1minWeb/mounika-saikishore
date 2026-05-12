@@ -10,30 +10,68 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:wght@400;600&family=Montserrat:wght@300;400&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Playfair+Display:ital,wght@0,400;0,600;1,400&family=Cormorant+Garamond:ital,wght@0,400;0,500;1,400&family=Montserrat:wght@300;400;500&display=swap"
         rel="stylesheet">
     <!-- FontAwesome for Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
-    <!-- Splash Screen Sequence -->
-    <div id="splash-screen" class="splash-screen">
-        <div class="envelope-wrapper" id="envelope">
-            <div class="envelope-back"></div>
-            <div class="letter">
-                <h2 class="splash-names" data-i18n="names">Mounika & Sai Kishore</h2>
-                <p class="splash-text">Wedding Invitation</p>
-            </div>
-            <div class="envelope-front"></div>
-            <div class="envelope-top"></div>
-            <div class="wax-seal" id="open-invite-btn">
-                <i class="fas fa-heart"></i>
-                <p style="font-size: 0.6rem; margin-top: 5px; text-transform: uppercase;">Tap</p>
+    <!-- Curtain Tap Invitation -->
+    <div id="curtain">
+        <div class="cp cp-l" id="cpl"><div class="cp-edge-l"></div><div class="cp-stripe"></div></div>
+        <div class="cp cp-r" id="cpr"><div class="cp-edge-r"></div><div class="cp-stripe"></div></div>
+        <div id="c-cta">
+            <div class="c-card">
+                <!-- Corner flourishes -->
+                <div class="c-corner c-tl">✿</div>
+                <div class="c-corner c-tr">✿</div>
+                <div class="c-corner c-bl">✿</div>
+                <div class="c-corner c-br">✿</div>
+
+                <!-- Mandala ornament -->
+                <svg class="c-mandala-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="50" cy="50" r="47" stroke="#C8A96A" stroke-width="0.6" fill="none" opacity="0.7"/>
+                    <circle cx="50" cy="50" r="38" stroke="#C8A96A" stroke-width="0.4" fill="none" opacity="0.5"/>
+                    <circle cx="50" cy="50" r="27" stroke="#C8A96A" stroke-width="0.6" fill="none" opacity="0.6"/>
+                    <circle cx="50" cy="50" r="10" fill="#C8A96A" opacity="0.18"/>
+                    <circle cx="50" cy="50" r="4" fill="#C8A96A" opacity="0.5"/>
+                    <ellipse cx="50" cy="8"  rx="4.5" ry="9" fill="#C8A96A" opacity="0.55"/>
+                    <ellipse cx="50" cy="92" rx="4.5" ry="9" fill="#C8A96A" opacity="0.55"/>
+                    <ellipse cx="8"  cy="50" rx="9" ry="4.5" fill="#C8A96A" opacity="0.55"/>
+                    <ellipse cx="92" cy="50" rx="9" ry="4.5" fill="#C8A96A" opacity="0.55"/>
+                    <ellipse cx="22" cy="22" rx="4.5" ry="9" fill="#C8A96A" opacity="0.4" transform="rotate(45 22 22)"/>
+                    <ellipse cx="78" cy="22" rx="4.5" ry="9" fill="#C8A96A" opacity="0.4" transform="rotate(-45 78 22)"/>
+                    <ellipse cx="22" cy="78" rx="4.5" ry="9" fill="#C8A96A" opacity="0.4" transform="rotate(-45 22 78)"/>
+                    <ellipse cx="78" cy="78" rx="4.5" ry="9" fill="#C8A96A" opacity="0.4" transform="rotate(45 78 78)"/>
+                    <circle cx="50" cy="20" r="2.2" fill="#C8A96A" opacity="0.65"/>
+                    <circle cx="50" cy="80" r="2.2" fill="#C8A96A" opacity="0.65"/>
+                    <circle cx="20" cy="50" r="2.2" fill="#C8A96A" opacity="0.65"/>
+                    <circle cx="80" cy="50" r="2.2" fill="#C8A96A" opacity="0.65"/>
+                    <circle cx="30" cy="30" r="1.8" fill="#C8A96A" opacity="0.5"/>
+                    <circle cx="70" cy="30" r="1.8" fill="#C8A96A" opacity="0.5"/>
+                    <circle cx="30" cy="70" r="1.8" fill="#C8A96A" opacity="0.5"/>
+                    <circle cx="70" cy="70" r="1.8" fill="#C8A96A" opacity="0.5"/>
+                </svg>
+
+                <p class="c-eyebrow">Wedding Invitation</p>
+                <div class="c-divider"><span>✦</span></div>
+                <h1 class="c-title">Mounika &amp; Sai Kishore</h1>
+                <div class="c-divider"><span>✦</span></div>
+                <p class="c-invite-line">Together with their families</p>
+                <p class="c-date">17 · June · 2026</p>
+                <p class="c-venue">Sri Chowdeshwari Kalyana Mandapam<br>Madanapalle</p>
+                <div class="c-thin-line"></div>
+                <div class="c-buttons">
+                    <a href="https://maps.app.goo.gl/cemyDsAPyQEnwAxx7" target="_blank" class="btn-c btn-directions">
+                        <span class="label"><i class="fas fa-location-dot"></i>&nbsp; Get Directions</span>
+                    </a>
+                    <button class="btn-c" id="btn-open">
+                        <span class="label">View Invitation</span>
+                    </button>
+                </div>
             </div>
         </div>
-        <!-- Sunburst transition -->
-        <div class="sunburst" id="sunburst"></div>
     </div>
 
     <!-- Language Selector -->
@@ -71,6 +109,11 @@
                 <p data-i18n="wedding_time_exact">Time: 4:15 AM - 5:15 AM</p>
                 <p data-i18n="wedding_location">Sri Chowdeshwari Kalyana Mandapam, Madanapalle</p>
             </div>
+            <a href="https://maps.app.goo.gl/cemyDsAPyQEnwAxx7" target="_blank" class="hero-directions btn-directions">
+                <i class="fas fa-location-dot"></i>
+                <span data-i18n="get_directions">Get Directions</span>
+            </a>
+
             <div class="countdown" id="countdown">
                 <div class="time-box"><span id="days">00</span>
                     <p data-i18n="days">Days</p>
@@ -89,55 +132,24 @@
         </div>
     </section>
 
-    <!-- Our Story Section -->
-    <section class="story hidden" id="story">
-        <h2 class="section-title" data-i18n="our_story">Our Story</h2>
-        <div class="gallery">
-            <div class="polaroid polaroid-left">
-                <div class="photo placeholder-1"></div>
-                <p class="caption" data-i18n="story_1">The first time we met...</p>
-            </div>
-            <div class="polaroid polaroid-right">
-                <div class="photo placeholder-2"></div>
-                <p class="caption" data-i18n="story_2">She said yes!</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Scratch-to-Reveal Section -->
-    <section class="scratch-section hidden" id="scratch">
-        <h2 class="section-title">✨ Scratch to Reveal ✨</h2>
-        <p class="scratch-hint">Scratch the card below to reveal the wedding date!</p>
-        <div class="scratch-card-wrapper">
-            <div class="scratch-reveal-content">
-                <p class="reveal-label">Save the Date</p>
-                <h2 class="reveal-date" data-i18n="wedding_date">17 • June • 2026</h2>
-                <p class="reveal-time" data-i18n="wedding_time_exact">Time: 4:15 AM - 5:15 AM</p>
-                <p class="reveal-venue" data-i18n="wedding_location">Sri Chowdeshwari Wedding Venue, Madanapalle</p>
-            </div>
-            <canvas id="scratch-canvas" width="340" height="220"></canvas>
-        </div>
-    </section>
-
     <!-- Events Section -->
     <section class="events hidden" id="events">
         <h2 class="section-title" data-i18n="events_title">Wedding Events</h2>
-        <div class="tall-cards-container">
+        <div class="tl-wrap">
+            <div class="tl-spine"></div>
+
             <!-- Reception -->
-            <div class="event-group">
-                <div class="tall-card" style="background-image: url('reception_art.png');">
-                    <div class="card-particles" data-effect="flowers"></div>
-                    <div class="card-particles" data-effect="sparkles"></div>
-                    <div class="card-particles" data-effect="fireflies"></div>
-                    <div class="card-overlay">
-                        <h3 data-i18n="reception">Reception</h3>
-                        <p class="date" data-i18n="reception_date">June 16, 2026 | 7:00 PM</p>
-                        <p class="location" data-i18n="reception_loc">Sri Chowdeshwari Kalyana Mandapam, Madanapalle</p>
-                    </div>
-                </div>
-                <div class="card-actions">
-                    <a href="https://maps.app.goo.gl/cemyDsAPyQEnwAxx7" target="_blank" class="btn-primary"
-                        data-i18n="get_directions">Get Directions</a>
+            <div class="tl-ev">
+                <div class="tl-ev-bg" style="background-image: url('reception_art.png');"></div>
+                <div class="tl-dot"></div>
+                <p class="tl-etag" data-i18n="reception">Reception</p>
+                <h3 class="tl-title" data-i18n="reception">Reception</h3>
+                <p class="tl-date" data-i18n="reception_date">June 16, 2026 | 7:00 PM</p>
+                <div class="tl-sep">✦</div>
+                <p class="tl-venue-name" data-i18n="reception_loc">Sri Chowdeshwari Kalyana Mandapam, Madanapalle</p>
+                <div class="tl-actions">
+                    <a href="https://maps.app.goo.gl/cemyDsAPyQEnwAxx7" target="_blank"
+                        class="btn-primary btn-directions" data-i18n="get_directions">Get Directions</a>
                     <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Reception+-+Mounika+%26+Sai+Kishore&dates=20260616T133000Z/20260616T183000Z&location=Sri+Chowdeshwari+Kalyana+Mandapam,+Madanapalle"
                         target="_blank" class="btn-secondary"><i class="far fa-calendar-plus"></i> <span
                             data-i18n="add_calendar">Add to Calendar</span></a>
@@ -145,20 +157,17 @@
             </div>
 
             <!-- Wedding -->
-            <div class="event-group">
-                <div class="tall-card" style="background-image: url('wedding_art.png');">
-                    <div class="card-particles" data-effect="flowers"></div>
-                    <div class="card-particles" data-effect="sparkles"></div>
-                    <div class="card-particles" data-effect="fireflies"></div>
-                    <div class="card-overlay">
-                        <h3 data-i18n="wedding">The Wedding</h3>
-                        <p class="date" data-i18n="wedding_time">Nov 15, 2026 | 5:00 PM</p>
-                        <p class="location" data-i18n="wedding_location">The Grand Taj, Mumbai</p>
-                    </div>
-                </div>
-                <div class="card-actions">
-                    <a href="https://maps.app.goo.gl/cemyDsAPyQEnwAxx7" target="_blank" class="btn-primary"
-                        data-i18n="get_directions">Get Directions</a>
+            <div class="tl-ev">
+                <div class="tl-ev-bg" style="background-image: url('wedding_art.png');"></div>
+                <div class="tl-dot"></div>
+                <p class="tl-etag" data-i18n="wedding">The Wedding</p>
+                <h3 class="tl-title" data-i18n="wedding">The Wedding</h3>
+                <p class="tl-date" data-i18n="wedding_time">June 17, 2026 | 4:15 AM</p>
+                <div class="tl-sep">✦</div>
+                <p class="tl-venue-name" data-i18n="wedding_location">Sri Chowdeshwari Kalyana Mandapam, Madanapalle</p>
+                <div class="tl-actions">
+                    <a href="https://maps.app.goo.gl/cemyDsAPyQEnwAxx7" target="_blank"
+                        class="btn-primary btn-directions" data-i18n="get_directions">Get Directions</a>
                     <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Wedding+-+Mounika+%26+Sai+Kishore&dates=20260616T224500Z/20260616T234500Z&location=Sri+Chowdeshwari+Kalyana+Mandapam,+Madanapalle"
                         target="_blank" class="btn-secondary"><i class="far fa-calendar-plus"></i> <span
                             data-i18n="add_calendar">Add to Calendar</span></a>
@@ -167,35 +176,58 @@
         </div>
     </section>
 
-    <!-- Family Invites Slider Section -->
-    <section class="family-invites hidden" id="invites">
+    <!-- Warm Wishes — Bride's Side -->
+    <section class="family-invites hidden" id="invites-bride">
         <h2 class="section-title" data-i18n="warm_wishes">Warm Wishes</h2>
-        <div class="slider-container">
-            <div class="slide fade">
+        <p class="wishes-label">From the Bride's Family</p>
+        <div class="slider-container" id="slider-bride">
+            <div class="slide slide-bride fade">
                 <p class="invite-msg" data-i18n="invite_parents">"We cordially invite you to grace the auspicious
                     occasion of our daughter's wedding and bless the couple."</p>
-                <p class="invite-author" data-i18n="author_parents">- Smt. Ramanamma & Sri Nallamari Rama Mohan
+                <p class="invite-author" data-i18n="author_parents">- Smt. Ramanamma &amp; Sri Nallamari Rama Mohan
                     (Parents)</p>
             </div>
-            <div class="slide fade">
+            <div class="slide slide-bride fade">
                 <p class="invite-msg" data-i18n="invite_anna">"Please join us in celebrating my little sister's
                     wedding!"</p>
                 <p class="invite-author" data-i18n="author_anna">- Venu Gopal (Anna)</p>
             </div>
-            <div class="slide fade">
-                <p class="invite-msg" data-i18n="invite_thammudu">"Looking forward to your presence at my elder sister's
-                    wedding celebration!"</p>
+            <div class="slide slide-bride fade">
+                <p class="invite-msg" data-i18n="invite_thammudu">"Looking forward to your presence at my elder
+                    sister's wedding celebration!"</p>
                 <p class="invite-author" data-i18n="author_thammudu">- Krishna Vamsi (Thammudu)</p>
             </div>
-
-            <!-- Navigation -->
-            <a class="prev" onclick="changeSlide(-1)">&#10094;</a>
-            <a class="next" onclick="changeSlide(1)">&#10095;</a>
+            <a class="prev" onclick="changeSlide('bride', -1)">&#10094;</a>
+            <a class="next" onclick="changeSlide('bride', 1)">&#10095;</a>
         </div>
         <div class="dots" style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+            <span class="dot dot-bride active" onclick="currentSlide('bride', 1)"></span>
+            <span class="dot dot-bride" onclick="currentSlide('bride', 2)"></span>
+            <span class="dot dot-bride" onclick="currentSlide('bride', 3)"></span>
+        </div>
+    </section>
+
+    <!-- Warm Wishes — Groom's Side -->
+    <section class="family-invites family-invites-alt hidden" id="invites-groom">
+        <p class="wishes-label">From the Groom's Family</p>
+        <div class="slider-container" id="slider-groom">
+            <div class="slide slide-groom fade">
+                <p class="invite-msg" data-i18n="invite_groom_parents">"We cordially invite you to grace the auspicious
+                    occasion of our son's wedding and bless the couple."</p>
+                <p class="invite-author" data-i18n="author_groom_parents">- Smt. Padma Priya &amp; Sri Sankarapu
+                    Sreenivasulu (Parents)</p>
+            </div>
+            <div class="slide slide-groom fade">
+                <p class="invite-msg" data-i18n="invite_groom_sister">"Please join us in celebrating my brother's
+                    wedding!"</p>
+                <p class="invite-author" data-i18n="author_groom_sister">- Nikitha (Sister)</p>
+            </div>
+            <a class="prev" onclick="changeSlide('groom', -1)">&#10094;</a>
+            <a class="next" onclick="changeSlide('groom', 1)">&#10095;</a>
+        </div>
+        <div class="dots" style="text-align:center">
+            <span class="dot dot-groom active" onclick="currentSlide('groom', 1)"></span>
+            <span class="dot dot-groom" onclick="currentSlide('groom', 2)"></span>
         </div>
     </section>
 
